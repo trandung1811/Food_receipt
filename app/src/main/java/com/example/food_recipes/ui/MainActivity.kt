@@ -1,4 +1,4 @@
-package com.example.food_recipes
+package com.example.food_recipes.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,6 +7,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.food_recipes.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -17,9 +18,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         navController = findNavController(R.id.navHostFragment)
         val appBarConfiguration: AppBarConfiguration = AppBarConfiguration(
-            setOf(R.id.recipesFragment,
-                  R.id.favoriteRecipesFragment,
-                  R.id.foodJokeFragment))
+            setOf(
+                R.id.recipesFragment,
+                R.id.favoriteRecipesFragment,
+                R.id.foodJokeFragment
+            ))
 
         var bottomNavigationView: BottomNavigationView = findViewById(R.id.bottomNavigationView)
         bottomNavigationView.setupWithNavController(navController)

@@ -1,11 +1,11 @@
-package com.example.food_recipes
+package com.example.food_recipes.ui.fragments.recipes
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.facebook.shimmer.Shimmer
+import com.example.food_recipes.R
 import com.todkars.shimmer.ShimmerRecyclerView
 
 
